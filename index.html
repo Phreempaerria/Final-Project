@@ -9,6 +9,7 @@
 <body>
     <div class="glass-container">
    <div class="login-box">  <br> <br>
+    <form id="loginForm"></form>
     <h1>WELCOME TO Diagon Alley</h1> <br> <br>
     <input type="text" id="username" name="username" required placeholder="Username"> <br>
     <input type="password" id="password" name="password" required placeholder="Password"> <br>      
@@ -21,12 +22,15 @@
 
 </body>
  <picture>
-    
  </picture>
-
-    
     </picture>
     </form>
+    <script>
+        document.getElementById('loginForm').onsubmit = function(event) {
+            event.preventDefault();  
+            window.location.href = "in.html";  
+        };
+    </script>
     </div>
     </div>
 </body>
